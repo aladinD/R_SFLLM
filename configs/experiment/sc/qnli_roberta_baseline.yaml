@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: qnli.yaml
+- override /model: roberta_for_sequence_classification.yaml
+- override /wireless: null
+tags:
+- qnli
+- roberta_for_sequence_classification
+- None
+task_name: sc

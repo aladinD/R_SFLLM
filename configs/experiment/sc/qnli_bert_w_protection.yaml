@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: qnli.yaml
+- override /model: bert_for_sequence_classification.yaml
+- override /wireless: w_protection.yaml
+tags:
+- qnli
+- bert_for_sequence_classification
+- w_protection
+task_name: sc

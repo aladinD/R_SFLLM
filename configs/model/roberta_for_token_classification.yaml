@@ -1,0 +1,15 @@
+# RoBERTaForTokenClassification model config
+_target_: models.roberta_module.RoBERTaForTokenClassificationModule
+
+config:
+  pretrained_model_name_or_path: "roberta-base" 
+  num_labels: null # specific to dataset {"conll2003": 10, "wnut_17": 14, "conll2012_ontonotesv5" : 38}
+
+# adamw and scheduler args
+lr: 1e-5
+eps: 1e-6
+warmup: 0.1 # 0.1 or empty for None
+scheduler_training_steps: null
+
+# Noise mode
+noise_mode: "per_batch" # "per_round" or "per_batch"

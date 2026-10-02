@@ -1,0 +1,14 @@
+# @package _global_ 
+defaults:
+- override /datamodule: conll2003.yaml
+- override /model: bert_for_token_classification.yaml
+- override /wireless: no_jammer.yaml
+tags:
+- conll2003
+- bert_for_token_classification
+- no_jammer
+- per_batch
+task_name: ner
+mse_path: /home/aladin/latest/resilient_sfl/mse_files/barrage_mses/mse_no_jammer.npy
+noise_mode: per_batch
+adversarial: false

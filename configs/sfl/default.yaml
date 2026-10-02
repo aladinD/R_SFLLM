@@ -1,0 +1,4 @@
+num_clients: 3
+num_rounds: 10
+num_epochs: 10
+process: "parallel" # from : {"parallel" or "sequential"}

@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: wnut_17.yaml
+- override /model: bert_for_token_classification.yaml
+- override /wireless: no_protection.yaml
+tags:
+- wnut_17
+- bert_for_token_classification
+- no_protection
+task_name: ner

@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: mrpc.yaml
+- override /model: roberta_for_sequence_classification.yaml
+- override /wireless: no_jammer.yaml
+tags:
+- mrpc
+- roberta_for_sequence_classification
+- no_jammer
+task_name: sc

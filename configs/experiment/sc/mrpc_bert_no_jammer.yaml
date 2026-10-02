@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: mrpc.yaml
+- override /model: bert_for_sequence_classification.yaml
+- override /wireless: no_jammer.yaml
+tags:
+- mrpc
+- bert_for_sequence_classification
+- no_jammer
+task_name: sc

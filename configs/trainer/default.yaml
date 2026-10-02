@@ -1,0 +1,26 @@
+_target_: pytorch_lightning.Trainer
+
+default_root_dir: ${paths.output_dir}
+
+min_epochs: 1 # prevents early stopping
+max_epochs: null # we overwrite this in src.py
+
+accelerator: cpu
+devices: 1
+
+# mixed precision for extra speed-up
+# precision: 16
+
+# do a debug run. only use if debug from cli does not work.
+fast_dev_run: false
+
+# disable checkpointing since we are using custom checkpoints 
+# for client and server
+enable_checkpointing: False
+
+# perform a validation loop every N training epochs
+check_val_every_n_epoch: 1
+
+# set True to to ensure deterministic results
+# makes training slower but gives more reproducibility than just setting seeds
+deterministic: False

@@ -1,0 +1,14 @@
+# @package _global_ 
+defaults:
+- override /datamodule: conll2003.yaml
+- override /model: roberta_for_token_classification.yaml
+- override /wireless: null
+tags:
+- conll2003
+- roberta_for_token_classification
+- None
+- per_round
+task_name: ner
+mse_path: null
+noise_mode: per_round
+adversarial: false

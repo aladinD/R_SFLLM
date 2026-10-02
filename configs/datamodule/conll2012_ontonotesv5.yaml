@@ -1,0 +1,15 @@
+# Datamodule config for CONLL2003 ONTONOTES 5.0 dataset
+_target_: datamodules.ner_datamodule.OntoNotesDataModule
+ner_dataset: conll2012_ontonotesv5
+num_labels: 37
+batch_size: 64
+num_workers: 16
+# num_labels: 38
+# we set following parameters to null because they will be overriden in the 
+# main script, and because it is impossible to interpolate values from the 
+# defaults list. 
+model_type: null
+num_splits: null
+
+# Truncation of the dataset for test purposes (default = null)
+truncate: null

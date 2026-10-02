@@ -1,0 +1,15 @@
+# @package _global_ 
+defaults:
+- override /datamodule: conll2012_ontonotesv5.yaml
+- override /model: bert_for_token_classification.yaml
+- override /wireless: w_protection.yaml
+tags:
+- conll2012_ontonotesv5
+- bert_for_token_classification
+- w_protection
+- adversarial
+- per_round
+task_name: ner
+mse_path: /home/aladin/latest/resilient_sfl/mse_files/barrage_mses/mse_w_protection.npy
+noise_mode: per_round
+adversarial: true

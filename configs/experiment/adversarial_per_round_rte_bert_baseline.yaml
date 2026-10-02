@@ -1,0 +1,15 @@
+# @package _global_ 
+defaults:
+- override /datamodule: rte.yaml
+- override /model: bert_for_sequence_classification.yaml
+- override /wireless: null
+tags:
+- rte
+- bert_for_sequence_classification
+- None
+- adversarial
+- per_round
+task_name: sc
+mse_path: null
+noise_mode: per_round
+adversarial: true

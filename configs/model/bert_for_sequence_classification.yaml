@@ -1,0 +1,15 @@
+# BERTForSequenceClassification model config
+_target_: models.bert_module.BERTForSequenceClassificationModule
+
+config:
+  pretrained_model_name_or_path: "bert-base-uncased" 
+  num_labels: null # specific to dataset, eg. 2 for {"sst2", "mrpc", "qnli"}, 3 for {"mnli"}
+
+# adamw and scheduler args
+lr: 1e-5
+eps: 1e-6
+warmup: 0.1 # 0.1 or empty for None
+scheduler_training_steps: null
+
+# Noise mode
+noise_mode: "per_batch" # "per_round" or "per_batch"

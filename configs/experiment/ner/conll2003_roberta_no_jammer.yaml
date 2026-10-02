@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: conll2003.yaml
+- override /model: roberta_for_token_classification.yaml
+- override /wireless: no_jammer.yaml
+tags:
+- conll2003
+- roberta_for_token_classification
+- no_jammer
+task_name: ner

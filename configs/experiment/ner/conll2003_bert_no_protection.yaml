@@ -1,0 +1,10 @@
+# @package _global_ 
+defaults:
+- override /datamodule: conll2003.yaml
+- override /model: bert_for_token_classification.yaml
+- override /wireless: no_protection.yaml
+tags:
+- conll2003
+- bert_for_token_classification
+- no_protection
+task_name: ner

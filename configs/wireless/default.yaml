@@ -1,0 +1,2 @@
+_target_: models.components.wireless_module.WirelessModule
+num_users: ${sfl.num_clients}

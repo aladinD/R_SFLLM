@@ -1,0 +1,14 @@
+# @package _global_ 
+defaults:
+- override /datamodule: wnut_17.yaml
+- override /model: bert_for_token_classification.yaml
+- override /wireless: null
+tags:
+- wnut_17
+- bert_for_token_classification
+- None
+- per_round
+task_name: ner
+mse_path: null
+noise_mode: per_round
+adversarial: false

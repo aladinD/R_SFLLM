@@ -1,0 +1,15 @@
+# @package _global_ 
+defaults:
+- override /datamodule: cola.yaml
+- override /model: roberta_for_sequence_classification.yaml
+- override /wireless: null
+tags:
+- cola
+- roberta_for_sequence_classification
+- None
+- adversarial
+- per_batch
+task_name: sc
+mse_path: null
+noise_mode: per_batch
+adversarial: true

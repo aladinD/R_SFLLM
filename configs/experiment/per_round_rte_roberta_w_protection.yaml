@@ -1,0 +1,14 @@
+# @package _global_ 
+defaults:
+- override /datamodule: rte.yaml
+- override /model: roberta_for_sequence_classification.yaml
+- override /wireless: w_protection.yaml
+tags:
+- rte
+- roberta_for_sequence_classification
+- w_protection
+- per_round
+task_name: sc
+mse_path: /home/aladin/latest/resilient_sfl/mse_files/barrage_mses/mse_w_protection.npy
+noise_mode: per_round
+adversarial: false

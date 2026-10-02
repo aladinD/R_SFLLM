@@ -1,0 +1,15 @@
+# @package _global_ 
+defaults:
+- override /datamodule: mrpc.yaml
+- override /model: bert_for_sequence_classification.yaml
+- override /wireless: w_protection.yaml
+tags:
+- mrpc
+- bert_for_sequence_classification
+- w_protection
+- adversarial
+- per_batch
+task_name: sc
+mse_path: /home/aladin/latest/resilient_sfl/mse_files/barrage_mses/mse_w_protection.npy
+noise_mode: per_batch
+adversarial: true
